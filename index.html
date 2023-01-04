@@ -1,9 +1,254 @@
+<!DOCTYPE html>
 <html>
- 
+    <head>
+        <title>My HTML Cheatsheet</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+    </head>
 <body>
-  <h1>Ethan Marshall</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <header>
+        <h1>HTML & CSS Cheatsheet</h1>
+    
+    <h2 id="links">Quick Links</h2>
+    <nav>
+        <ul>
+            <li><a href="#HTML_Tags">HTML Structure and Tags (Syntax)</a></li>
+            <li><a href="#HTML_tables">HTML Tables</a></li>
+            <li><a href="#CSS_styling">CSS Styling</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="HTML_Tags">
+    <h2>HTML Structure and Tags (Syntax)</h2>
+    
+        <p>HTML documents have a fixed structure and an array of standard tags and other elements which are fluidly used in the makeup of each document. While some tags 
+            are no longer used (deprecated) you may still find some in use today. Here is a list of various HTML tags, their names, and what they do/how we use them in 
+            in the construction of a well made HTML document.</p>
+            <table class="center">
+                <thead>
+                    <th>HTML Element</th>
+                    <th>Name</th>
+                    <th>Description & Use</th>
+                </thead>
+                <tbody>
+                   <tr>
+                    <td>&lt;!DOCTYPE&gt;</td>
+                    <td>Document Type</td>
+                    <td>Defines that this document is an HTML5 document</td>
+                    </tr> 
+                   <tr> 
+                    <td>&lt;html&gt;</td>
+                    <td>HTML</td>
+                    <td>Root element of an HTML page</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;head&gt;</td>
+                    <td>Head</td>
+                    <td>Contains meta (self referral) info about the HTML page such as stylesheet, font usage, tab title and others</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;title&gt;</td>
+                    <td>Title</td>
+                    <td>Specifies a title for the HTML page (shown in the title bar/tab)</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;body&gt;</td>
+                    <td>Body</td>
+                    <td>Defines the document body and contains all visible components of the HTML page</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;h1/h2/h3/h4/h5/h6&gt;</td>
+                    <td>Heading</td>
+                    <td>Defines a heading over various sizes from h1-h6 from largest to smallest</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;p&gt;</td>
+                    <td>Paragraph</td>
+                    <td>Defines text as a paragraph</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;link&gt;</td>
+                    <td>Link</td>
+                    <td>Used to link to an external resource, such as a CSS file or webfonts</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;main&gt;</td>
+                    <td>Main</td>
+                    <td>Contains the most important content of your page</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;footer&gt;</td>
+                    <td>Footer</td>
+                    <td>At the bottom of your page, contains various contact information, copyright info, and about info</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;header&gt;</td>
+                    <td>Header</td>
+                    <td>Page headline. Typically contains page title and useful links for page navigation</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;nav&gt;</td>
+                    <td>Navigation</td>
+                    <td>Contains the navigation links for your page/website</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Used to create links to another part of your page</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;article&gt;</td>
+                    <td>Article</td>
+                    <td>Self-contained text such as news articles or large paragraphs</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Used in conjunction with the article tag for things such as quotes or other useful info</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;ul&gt;</td>
+                    <td>Unordered List</td>
+                    <td>Used to create a bulleted list</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered list</td>
+                    <td>Used to create a numbered list</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td>Contains the actual item/info to be contained in the ordered or unordered list</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;img&gt;</td>
+                    <td>Image</td>
+                    <td>Contains reference to an image. &lt;img src="..."/&gt; Self closing tag.</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;video&gt;</td>
+                    <td>Video</td>
+                    <td>Contains reference to a video. Unlike &lt;img&gt;, this tag is not self closing.</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;embed&gt;</td>
+                    <td>Embed</td>
+                    <td>Used to embed a gif, video, or other media on a page. Deprecated tag.</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;audio&gt;</td>
+                    <td>Audio</td>
+                    <td>Used to add audio to a page.</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;div&gt;</td>
+                    <td>Division</td>
+                    <td>Used to divide portions of your documents main body </td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;span&gt;</td>
+                    <td>Span</td>
+                    <td>Used to allow seprate formatting of content whilst maintaining the text inline</td>
+                   </tr> 
+                   <tr> 
+                    <td>&lt;alt&gt;</td>
+                    <td>Alternate Text</td>
+                    <td>Specifies an alternate description for an image if it cannot be displayed or for accessibility</td>
+                   </tr> 
+             </tbody>
+            </table>
+            <h3>For a more extensive reference on HTML tags and structure, visit <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a></h3>
+     </section> 
+     <a href="#links">Return to Quick Links</a>  
+     <section id="HTML_tables">
+        <h2>HTML Tables</h2>
+        <p>You can build HTML tables using these tags and some intuitive structuring of each.</p>
+            <table class="center">
+                <thead>
+                 <th>Tag</th>
+                 <th>Name</th>
+                 <th>Description</th>
+                </thead>
+                <tbody>
+                <tr>
+                <td>&lt;table&gt;</td>
+                <td>Table</td>
+                    <td>The container for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>The set of rows containing the actual table data.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>The table rows.</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;td&gt;</td>
+                            <td>Table Data</td>
+                            <td>The table data that fills the rows.</td>
+                            </tr>
+                            <tr>
+                            <td>&lt;tfoot&gt;</td>
+                            <td>Table Foot</td>
+                            <td>The set of rows defining the table footer.</td>
+                            </tr>
+
+
+            </table>
+            <table class="center">
+                <thead>
+                    <th>Attribute</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;colspan&gt;</td>
+                        <td>Column Span</td>
+                        <td>Defines how many columns a &lt;td&gt; element should span.</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;rowspan&gt;</td>
+                        <td>Row Span</td>
+                        <td>Defines how many rows a &lt;td&gt; element should span.</td>
+                        </tr>
+                </tbody>
+            </table>
+        <h3>For a more extensive refence on HTML tables and their structure, visit <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables">MDN</a></h3>
+     </section>
+     <a href="#links">Return to Quick Links</a>
+     <section id="CSS_styling">
+        <h2>CSS Styling</h2>
+        <p>Styling of your page can be done inline in your HTML code (not recommended), or via CSS stylesheets. Cascading Stylesheets (CSS) are 
+            seperate files that you can connect to your index.html file and apply various stylings such as text editing to include font colors, weights, familys,
+            background images, and much more. To connect it to your html file, you must add a reference in the "head" of your document with the following
+            syntax: <br><span>&lt;link rel="stylesheet" href='css/stylesheet.css' type="text/css"&gt;</span>. Your reference doesn't have to match that exactly, but must make sense. </p>
+        <p>This styling is applied via different selectors, with varying degrees of specificity. Here is the order of precedence:</p>
+            <ol>
+            <li>Inline styles. This is referring to applying your styling via the HTML document directly.</li>
+            <li>IDs. Applied to an element in the same manner as classes, but more specific.</li>
+            <li>Classes, pseudo-classes, attribute selectors.</li>
+            <li>Elements and pseudo-elements.</li>
+            </ol>
+        <p>Nested elements: styling is applied to child elements, e.g. the list items of an &lt;ol&gt; or &lt;ul&gt;&lt;/&gt;</p>
+        <p>Inheritance is applying styling from the topmost html element to all other child elements. E.g. styling applied to &lt;html&gt; applies to all intermediate elements, unless more specific styling is present in the CSS.</p>
+        <p>There are several ways to chain selectors for styling and the chaining method depends on the type of selector.</p>
+        <h3>For a more extensive reference on CSS styling and structure, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a></h3>
+        </section>
+    <a href="#links">Return to Quick Links</a>
+    
+
+    <footer>
+
+    </footer>
 </body>
- 
 </html>
